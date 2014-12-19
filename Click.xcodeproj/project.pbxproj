@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69330A2D1A43FBD900580127 /* photo-icon-large.png in Resources */ = {isa = PBXBuildFile; fileRef = 69330A2C1A43FBD900580127 /* photo-icon-large.png */; };
+		69330A311A43FF3300580127 /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69330A301A43FF3300580127 /* DashboardViewController.m */; };
+		69330A331A440E3E00580127 /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 69330A321A440E3E00580127 /* loading.png */; };
 		69429E161A417F59007FA358 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69429E151A417F59007FA358 /* main.m */; };
 		69429E191A417F59007FA358 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69429E181A417F59007FA358 /* AppDelegate.m */; };
 		69429E1C1A417F59007FA358 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69429E1B1A417F59007FA358 /* LoginViewController.m */; };
@@ -14,6 +17,10 @@
 		69429E211A417F59007FA358 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69429E201A417F59007FA358 /* Images.xcassets */; };
 		69429E241A417F59007FA358 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69429E221A417F59007FA358 /* LaunchScreen.xib */; };
 		69429E301A417F59007FA358 /* ClickTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69429E2F1A417F59007FA358 /* ClickTests.m */; };
+		697340B71A42ADE0004A5809 /* AuthorizeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 697340B61A42ADE0004A5809 /* AuthorizeWebViewController.m */; };
+		69ED9FF81A419D6300DCD4AE /* libFlickrKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69ED9FF51A419D1F00DCD4AE /* libFlickrKit.a */; };
+		69EDA0001A41A68B00DCD4AE /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69ED9FFF1A41A68B00DCD4AE /* SystemConfiguration.framework */; };
+		69EDA0021A41A69D00DCD4AE /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69EDA0011A41A69D00DCD4AE /* AssetsLibrary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +31,34 @@
 			remoteGlobalIDString = 69429E0F1A417F59007FA358;
 			remoteInfo = Click;
 		};
+		69ED9FF41A419D1F00DCD4AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69ED9FEF1A419D1F00DCD4AE /* FlickrKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 552D918C1753F8EF00BE3FEA;
+			remoteInfo = FlickrKit;
+		};
+		69ED9FF61A419D1F00DCD4AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69ED9FEF1A419D1F00DCD4AE /* FlickrKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 552D919A1753F8F000BE3FEA;
+			remoteInfo = FlickrKitTests;
+		};
+		69ED9FFD1A419E9500DCD4AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69ED9FEF1A419D1F00DCD4AE /* FlickrKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 552D918B1753F8EF00BE3FEA;
+			remoteInfo = FlickrKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69330A2C1A43FBD900580127 /* photo-icon-large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "photo-icon-large.png"; sourceTree = "<group>"; };
+		69330A2F1A43FF3300580127 /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
+		69330A301A43FF3300580127 /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
+		69330A321A440E3E00580127 /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
 		69429E101A417F59007FA358 /* Click.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Click.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69429E141A417F59007FA358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69429E151A417F59007FA358 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +72,11 @@
 		69429E291A417F59007FA358 /* ClickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69429E2E1A417F59007FA358 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69429E2F1A417F59007FA358 /* ClickTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickTests.m; sourceTree = "<group>"; };
+		697340B51A42ADE0004A5809 /* AuthorizeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthorizeWebViewController.h; sourceTree = "<group>"; };
+		697340B61A42ADE0004A5809 /* AuthorizeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthorizeWebViewController.m; sourceTree = "<group>"; };
+		69ED9FEF1A419D1F00DCD4AE /* FlickrKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = FlickrKit.xcodeproj; sourceTree = "<group>"; };
+		69ED9FFF1A41A68B00DCD4AE /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		69EDA0011A41A69D00DCD4AE /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +84,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69EDA0021A41A69D00DCD4AE /* AssetsLibrary.framework in Frameworks */,
+				69EDA0001A41A68B00DCD4AE /* SystemConfiguration.framework in Frameworks */,
+				69ED9FF81A419D6300DCD4AE /* libFlickrKit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +103,8 @@
 		69429E071A417F59007FA358 = {
 			isa = PBXGroup;
 			children = (
+				69EDA0011A41A69D00DCD4AE /* AssetsLibrary.framework */,
+				69ED9FFF1A41A68B00DCD4AE /* SystemConfiguration.framework */,
 				69429E121A417F59007FA358 /* Click */,
 				69429E2C1A417F59007FA358 /* ClickTests */,
 				69429E111A417F59007FA358 /* Products */,
@@ -81,13 +123,20 @@
 		69429E121A417F59007FA358 /* Click */ = {
 			isa = PBXGroup;
 			children = (
+				69ED9CBF1A41975300DCD4AE /* FlickrKit */,
 				69429E171A417F59007FA358 /* AppDelegate.h */,
 				69429E181A417F59007FA358 /* AppDelegate.m */,
 				69429E1A1A417F59007FA358 /* LoginViewController.h */,
 				69429E1B1A417F59007FA358 /* LoginViewController.m */,
+				697340B51A42ADE0004A5809 /* AuthorizeWebViewController.h */,
+				697340B61A42ADE0004A5809 /* AuthorizeWebViewController.m */,
+				69330A2F1A43FF3300580127 /* DashboardViewController.h */,
+				69330A301A43FF3300580127 /* DashboardViewController.m */,
 				69429E1D1A417F59007FA358 /* Main.storyboard */,
 				69429E201A417F59007FA358 /* Images.xcassets */,
 				69429E221A417F59007FA358 /* LaunchScreen.xib */,
+				69330A321A440E3E00580127 /* loading.png */,
+				69330A2C1A43FBD900580127 /* photo-icon-large.png */,
 				69429E131A417F59007FA358 /* Supporting Files */,
 			);
 			path = Click;
@@ -119,6 +168,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		69ED9CBF1A41975300DCD4AE /* FlickrKit */ = {
+			isa = PBXGroup;
+			children = (
+				69ED9FEF1A419D1F00DCD4AE /* FlickrKit.xcodeproj */,
+			);
+			path = FlickrKit;
+			sourceTree = "<group>";
+		};
+		69ED9FF01A419D1F00DCD4AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69ED9FF51A419D1F00DCD4AE /* libFlickrKit.a */,
+				69ED9FF71A419D1F00DCD4AE /* FlickrKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,6 +199,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				69ED9FFE1A419E9500DCD4AE /* PBXTargetDependency */,
 			);
 			name = Click;
 			productName = Click;
@@ -186,6 +253,12 @@
 			mainGroup = 69429E071A417F59007FA358;
 			productRefGroup = 69429E111A417F59007FA358 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 69ED9FF01A419D1F00DCD4AE /* Products */;
+					ProjectRef = 69ED9FEF1A419D1F00DCD4AE /* FlickrKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				69429E0F1A417F59007FA358 /* Click */,
@@ -193,6 +266,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		69ED9FF51A419D1F00DCD4AE /* libFlickrKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libFlickrKit.a;
+			remoteRef = 69ED9FF41A419D1F00DCD4AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		69ED9FF71A419D1F00DCD4AE /* FlickrKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FlickrKitTests.xctest;
+			remoteRef = 69ED9FF61A419D1F00DCD4AE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		69429E0E1A417F59007FA358 /* Resources */ = {
@@ -202,6 +292,8 @@
 				69429E1F1A417F59007FA358 /* Main.storyboard in Resources */,
 				69429E241A417F59007FA358 /* LaunchScreen.xib in Resources */,
 				69429E211A417F59007FA358 /* Images.xcassets in Resources */,
+				69330A2D1A43FBD900580127 /* photo-icon-large.png in Resources */,
+				69330A331A440E3E00580127 /* loading.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,9 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69330A311A43FF3300580127 /* DashboardViewController.m in Sources */,
 				69429E1C1A417F59007FA358 /* LoginViewController.m in Sources */,
 				69429E191A417F59007FA358 /* AppDelegate.m in Sources */,
 				69429E161A417F59007FA358 /* main.m in Sources */,
+				697340B71A42ADE0004A5809 /* AuthorizeWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +334,11 @@
 			isa = PBXTargetDependency;
 			target = 69429E0F1A417F59007FA358 /* Click */;
 			targetProxy = 69429E2A1A417F59007FA358 /* PBXContainerItemProxy */;
+		};
+		69ED9FFE1A419E9500DCD4AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlickrKit;
+			targetProxy = 69ED9FFD1A419E9500DCD4AE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -343,6 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/Click/FlickrKit/Classes\"/**",
+				);
 				INFOPLIST_FILE = Click/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +457,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/Click/FlickrKit/Classes\"/**",
+				);
 				INFOPLIST_FILE = Click/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +521,7 @@
 				69429E351A417F59007FA358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69429E361A417F59007FA358 /* Build configuration list for PBXNativeTarget "ClickTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +530,7 @@
 				69429E381A417F59007FA358 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

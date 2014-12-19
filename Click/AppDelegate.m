@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FlickrKit.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *apiKey = @"0d00f523af8df461b6f7df0d9cc52d59";
+    NSString *secret = @"297f9f8fc5c29616";
+    if (!apiKey) {
+        NSLog(@"\n----------------------------------\nYou need to enter your own 'apiKey' and 'secret' in FKAppDelegate for the demo to run. \n\nYou can get these from your Flickr account settings.\n----------------------------------\n");
+        exit(0);
+    }
+    [[FlickrKit sharedFlickrKit] initializeWithAPIKey:apiKey sharedSecret:secret];
+    
+    
     return YES;
 }
 
@@ -40,6 +50,18 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    [[FlickrKit sharedFlickrKit] logout];
 }
+
+- (BOOL) application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    NSString *scheme = [url scheme];
+    if([@"click" isEqualToString:scheme]) {
+        // I don't recommend doing it like this, it's just a demo... I use an authentication
+        // controller singleton object in my projects
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UserAuthCallbackNotification" object:url userInfo:nil];
+    }
+    return YES;
+}
+
 
 @end
